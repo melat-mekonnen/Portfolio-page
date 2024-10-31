@@ -245,3 +245,80 @@ header.shadow {
 .tab-panel.active {
   display: block;
 }
+
+/* Skills with progress bars */
+.skill {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  
+  background-color:  hsl(260, 100%, 51%);
+  border-radius: 5px;
+}
+
+h2 {
+  color: #333;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  
+  .tabs-container {
+      width: 95%;
+      padding: 15px;
+  }
+
+  .tab-buttons {
+      flex-direction: column;
+  }
+
+  .tab-btn {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  ul li {
+      font-size: 14px;
+  }
+
+  .progress-bar {
+      height: 15px;
+  }
+
+  .progress {
+      height: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tab-btn {
+      font-size: 12px;
+      padding: 6px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  ul li {
+      font-size: 12px;
+  }
+}
